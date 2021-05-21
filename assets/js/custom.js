@@ -41,31 +41,29 @@
     nextArrow: '<span class="next-arrow"><img src="./assets/images/next.png" alt=""></span>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1, 
-          dots: true
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots:true
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots:true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -95,9 +93,6 @@
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -111,18 +106,18 @@
     nextArrow: '<span class="next-arrow"><img src="./assets/images/next.png" alt=""></span>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 991,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           dots:true
         }
       },
@@ -130,11 +125,8 @@
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,dots:true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
