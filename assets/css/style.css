@@ -21,7 +21,7 @@ img {
   font-size: 72px !important;
 }
 h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 48px;
   margin: 0 !important;
 }
@@ -410,6 +410,125 @@ nav .nav-wrapper ul li a:hover {
   display: none;
 }
 
+/* About page */
+.about-top {
+  position: relative;
+}
+.about-top .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+}
+.about-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #2d2d2d 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.3;
+}
+.a-mission {
+  text-align: center;
+  max-width: 870px;
+  margin: auto;
+  padding: 90px 0;
+}
+.a-mission h3 {
+  font-weight: normal;
+  margin-top: 20px;
+}
+.why-ihd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f4f6ee;
+  padding: 107px;
+  grid-gap: 60px;
+}
+.wi-right {
+  padding: 70px 0;
+  max-width: 580px;
+}
+.wi-right h4 {
+  margin-top: 20px;
+}
+.a-values {
+  padding: 80px 175px;
+  text-align: center;
+}
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 70px;
+  grid-gap: 85px;
+}
+.values h2 {
+  margin: 20px 0;
+}
+.values h5 {
+  font-weight: normal;
+}
+.v-sec-col {
+  margin-top: -12px;
+}
+
+/* Contact page */
+.contact-top {
+  position: relative;
+}
+.contact-top .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+}
+.contact-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #2d2d2d 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.3;
+}
+.c-form {
+  padding: 120px 110px 120px 160px;
+}
+.c-form-bottom {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 100px;
+  margin-top: 40px;
+}
+.in-field {
+  border: 1px solid #0b6c3b !important;
+}
+.cf-left label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+.cf-left div {
+  margin-bottom: 30px;
+}
+.cf-left .comment {
+  height: 185px !important;
+}
+.cf-right {
+  background-color: #f4f6ee;
+  padding: 70px;
+}
+.c-submit {
+  width: 100%;
+  background-color: #0b6c3b;
+}
 @media only screen and (max-width: 767px) {
   .mb-none {
     display: none;
@@ -581,6 +700,83 @@ nav .nav-wrapper ul li a:hover {
     left: 0;
     font-size: 24px;
   }
+
+  /* about page */
+  .about-top {
+    height: 375px;
+  }
+  .about-top img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .about-top h1 {
+    font-size: 32px !important;
+  }
+  .about h1 {
+    font-size: 24px !important;
+  }
+  .about h2 {
+    font-size: 18px !important;
+  }
+  .about h3 {
+    font-size: 18px !important;
+  }
+  .about h5 {
+    font-size: 16px !important;
+  }
+  .a-mission {
+    padding: 50px 25px;
+  }
+  .why-ihd {
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-gap: 0;
+  }
+  .wi-right {
+    padding: 50px 25px;
+  }
+  .a-values {
+    padding: 50px 25px;
+  }
+  .values {
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    text-align: left;
+  }
+
+  /* Contact page */
+  .contact-top {
+    height: 375px;
+  }
+  .contact-top img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .contact-top h1 {
+    font-size: 32px !important;
+  }
+  .contact h1 {
+    font-size: 24px !important;
+  }
+  .contact h2 {
+    font-size: 18px !important;
+  }
+  .contact h3 {
+    font-size: 18px !important;
+  }
+  .contact h5 {
+    font-size: 16px !important;
+  }
+  .c-form {
+    padding: 30px;
+  }
+  .c-form-bottom {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .cf-right {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 1300px) and (min-width: 768px) {
   .mb-none {
@@ -747,5 +943,85 @@ nav .nav-wrapper ul li a:hover {
     right: 0;
     left: 0;
     font-size: 24px;
+  }
+
+  /* about page */
+  .about-top {
+    height: 375px;
+  }
+  .about-top img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .about-top h1 {
+    font-size: 32px !important;
+  }
+  .about h1 {
+    font-size: 24px !important;
+  }
+  .about h2 {
+    font-size: 18px !important;
+  }
+  .about h3 {
+    font-size: 18px !important;
+  }
+  .about h5 {
+    font-size: 16px !important;
+  }
+  .a-mission {
+    padding: 50px 25px;
+  }
+  .why-ihd {
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-gap: 0;
+  }
+  .wi-right {
+    padding: 50px 25px;
+    margin: auto;
+    text-align: center;
+  }
+  .a-values {
+    padding: 50px 25px;
+  }
+  .values {
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    text-align: center;
+  }
+
+  /* Contact page */
+  .contact-top {
+    height: 375px;
+  }
+  .contact-top img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .contact-top h1 {
+    font-size: 32px !important;
+  }
+  .contact h1 {
+    font-size: 24px !important;
+  }
+  .contact h2 {
+    font-size: 18px !important;
+  }
+  .contact h3 {
+    font-size: 18px !important;
+  }
+  .contact h5 {
+    font-size: 16px !important;
+  }
+
+  .c-form {
+    padding: 30px;
+  }
+  .c-form-bottom {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .cf-right {
+    padding: 20px;
   }
 }
