@@ -529,6 +529,106 @@ nav .nav-wrapper ul li a:hover {
   width: 100%;
   background-color: #0b6c3b;
 }
+
+/* wholesale page */
+.h-content img {
+  position: relative;
+  max-height: 645px;
+  object-fit: cover;
+}
+.w-hero-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  max-width: 520px;
+  color: #fff;
+  margin: 230px 120px;
+}
+.h-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #2d2d2d 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.3;
+}
+.w-btn {
+  background-color: #0b6c3b !important;
+  color: #fff;
+}
+.w-service {
+  padding: 30px 150px;
+}
+
+.wbr-top {
+  display: flex;
+  gap: 80px;
+  margin-top: 48px;
+  font-size: 16px;
+}
+.wbr-top p {
+  display: flex;
+  align-items: center;
+}
+.w-boost-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wb-right {
+  padding: 145px 90px 0 50px;
+  background-color: #f4f6ee;
+}
+.wb-right h1 {
+  font-weight: normal;
+  margin: 26px 0 36px 0 !important;
+}
+.wb-btn {
+  margin-top: 50px;
+  padding: 0px 50px !important;
+  font-weight: 700;
+}
+.w-boost .wb-header {
+  text-align: center;
+  padding: 30px 0 60px 0;
+}
+.growth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -6px;
+}
+.g-left {
+  background-color: #f4f6ee;
+  padding: 120px 120px 0 200px;
+}
+.g-left h5 {
+  font-weight: normal;
+}
+.w-form {
+  padding: 80px 360px;
+  text-align: center;
+}
+.wf-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  margin-top: 80px;
+}
+.wf-field input {
+  margin-bottom: 55px !important;
+  color: #2d2d2d !important;
+  padding: 0 10px !important;
+}
+.wf-btn {
+  padding: 0 170px !important;
+  background-color: #0b6c3b !important;
+  color: #fff;
+}
+.wf-btn:hover {
+  background-color: #0b6c3b !important;
+  color: #fff;
+}
 @media only screen and (max-width: 767px) {
   .mb-none {
     display: none;
@@ -777,6 +877,60 @@ nav .nav-wrapper ul li a:hover {
   .cf-right {
     padding: 20px;
   }
+
+  /* wholesale page */
+
+  .h-content img {
+    height: 550px;
+    object-fit: cover;
+  }
+  .w-hero-text {
+    margin: 0px;
+    padding: 100px 0 50px 30px;
+  }
+  .w-hero-text h1 {
+    font-size: 36px !important;
+    margin-top: 10px !important;
+    font-weight: normal;
+  }
+  .w-boost .wb-header {
+    padding: 30px 15px;
+  }
+  .w-boost-content {
+    grid-template-columns: 1fr;
+  }
+  .wb-right {
+    padding: 30px;
+  }
+  .wbr-top {
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .growth {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .g-left {
+    padding: 30px;
+    order: 2;
+  }
+  .w-form {
+    padding: 30px;
+  }
+  .wf-field {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin-top: 30px;
+  }
+  .wf-field input {
+    margin-bottom: 40px !important;
+    padding: 0 0 0 10px !important;
+  }
+  .wf-btn {
+    padding: 0 50px !important;
+  }
 }
 @media screen and (max-width: 1300px) and (min-width: 768px) {
   .mb-none {
@@ -1023,5 +1177,58 @@ nav .nav-wrapper ul li a:hover {
   }
   .cf-right {
     padding: 20px;
+  }
+  /* wholesale page */
+
+  .h-content img {
+    height: 550px;
+    object-fit: cover;
+  }
+  .w-hero-text {
+    margin: 0px;
+    padding: 100px 0 50px 30px;
+  }
+  .w-hero-text h1 {
+    font-size: 36px !important;
+    margin-top: 10px !important;
+    font-weight: normal;
+  }
+  .w-boost .wb-header {
+    padding: 30px 15px;
+  }
+  .w-boost-content {
+    grid-template-columns: 1fr;
+  }
+  .wb-right {
+    padding: 30px;
+  }
+  .wbr-top {
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .growth {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .g-left {
+    padding: 30px;
+    order: 2;
+  }
+  .w-form {
+    padding: 30px;
+  }
+  .wf-field {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin-top: 30px;
+  }
+  .wf-field input {
+    margin-bottom: 40px !important;
+    padding: 0 0 0 10px !important;
+  }
+  .wf-btn {
+    padding: 0 50px !important;
   }
 }
