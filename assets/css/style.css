@@ -8,9 +8,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: Poppins-regular;
+}
+.s-down {
+  cursor: pointer;
+  position: absolute;
+  left: 7%;
+  margin-top: -150px !important;
+  color: #fff;
 }
 img {
   width: 100%;
@@ -629,8 +637,14 @@ nav .nav-wrapper ul li a:hover {
   background-color: #0b6c3b !important;
   color: #fff;
 }
+.po-btn {
+  padding: 0 40px !important;
+}
 @media only screen and (max-width: 767px) {
   .mb-none {
+    display: none;
+  }
+  .f-hr {
     display: none;
   }
   .d-none {
@@ -698,11 +712,22 @@ nav .nav-wrapper ul li a:hover {
   .ihd-collection .col {
     padding: 0;
   }
+  .ihd-collection .col img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .ihd-collection .col h2 {
+    padding: 15px 25px !important;
+  }
   .feature-product-section {
     margin: 50px 0;
   }
   .wholesale {
     grid-template-columns: 1fr;
+  }
+  .w-left {
+    height: 206px;
+    object-fit: cover;
   }
   .wholesale .w-right {
     padding: 30px !important;
@@ -800,7 +825,13 @@ nav .nav-wrapper ul li a:hover {
     left: 0;
     font-size: 24px;
   }
-
+  .footer-copyright p {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-copyright p span {
+    margin-left: 0 !important;
+  }
   /* about page */
   .about-top {
     height: 375px;
@@ -845,12 +876,12 @@ nav .nav-wrapper ul li a:hover {
   }
 
   /* Contact page */
-  .contact-top {
-    height: 375px;
-  }
   .contact-top img {
     object-fit: cover;
-    height: 100%;
+    height: 246px;
+  }
+  .contact-top::after {
+    height: 246px;
   }
   .contact-top h1 {
     font-size: 32px !important;
@@ -931,8 +962,14 @@ nav .nav-wrapper ul li a:hover {
   .wf-btn {
     padding: 0 50px !important;
   }
+  .s-down {
+    display: none;
+  }
 }
 @media screen and (max-width: 1300px) and (min-width: 768px) {
+  .s-down {
+    display: none;
+  }
   .mb-none {
     display: none;
   }
